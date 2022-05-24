@@ -12,14 +12,21 @@ classDiagram
       Shape:Shape()
       Shape:Shape(int, int)
       Shape:+string draw()
-      Shape:int getValueX()
-      Shape:int getValueY()
+      Shape:+int getValueX()
+      Shape:+int getValueY()
       class Circle {
         -int r
         +Circle()
         +Circle(int, int, int)
+        +getRadio()
       }
-      class Rectangle {        
+      class Rectangle {  
+            -int alto
+            -int ancho
+            +Rectangle()
+            +Rectangle(int, int, int, int)
+            +getAlto()
+            +getAncho()      
       }
       class Polygon {
       }
